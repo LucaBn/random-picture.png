@@ -12,7 +12,7 @@
     $picture = $pictures[$timestamp%$picturesNumber];
 
     // 🎵 Oh, ariá-raió Obá, Obá, Obá 🎵 ~ https://www.youtube.com/watch?v=Tfa6fRjPlUE
-    $resourceURL = $domain.$folderPath.$picturesDirectory."/".($picture);
+    $resourceURL = $domain.$folderPath.$picturesDirectory."/".$picture;
     $pathParts = pathinfo($resourceURL);
     $resource = fopen($resourceURL, "rb");
 
